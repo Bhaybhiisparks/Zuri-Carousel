@@ -1,7 +1,7 @@
 
-/* *, *::before, *::after{
+*, *::before, *::after{
     box-sizing: border-box;
-} */
+}
 
 body{
     margin: 0;
@@ -20,7 +20,7 @@ body{
     object-fit: cover;
     object-position: center;
     width: 60%;
-    height: 80%;
+    height: 85%;
 }
 
 .container ul{
@@ -33,15 +33,19 @@ body{
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition: 0.1s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .slide[data-active] {
     opacity: 1;
 }
 
-button{
-    /* opacity: 0; */
+
+button.default{
+     display: none; 
+     cursor:help;
+     /* pointer-events: none;  */
+     /* user-select: none;  */
 }
 
 button.prev{
@@ -50,8 +54,8 @@ button.prev{
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
-    z-index: 3;
-    border-radius: .3rem;
+    z-index: 9;
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 
@@ -62,7 +66,7 @@ button.next{
     right: 20%;
     transform: translateY(-50%);
     z-index: 3;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 
